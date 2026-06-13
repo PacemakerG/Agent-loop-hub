@@ -4,6 +4,10 @@
 
 Agent Loop Hub is a community collection of reusable AI Agent workflow loops.
 
+## Description
+
+Agent Loop Hub collects practical, reusable workflow templates that show how AI agents plan, execute, review, recover from failure, and hand control back to humans. Instead of sharing a single prompt, each loop describes the roles, state, checkpoints, and repeatable process behind an agent-powered workflow.
+
 Most people share prompts.
 This repo shares loops.
 
