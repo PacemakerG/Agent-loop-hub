@@ -1,0 +1,12 @@
+name: OpenSpec Dev Loop
+category: coding
+description: Planner-Executor-Reviewer loop for OpenSpec-driven software development.
+roles:
+  - Planner
+  - Executor
+  - Reviewer
+human_checkpoints:
+  - plan_review
+  - spec_review
+  - manual_test
+state_file: .agent-loop/state.md

@@ -1,15 +1,15 @@
 $schema: "https://json-schema.org/draft/2020-12/schema"
 $id: "https://agent-loop-hub.dev/schemas/loop.schema.yaml"
-title: Agent Loop
-description: Minimal schema for describing a reusable AI Agent workflow loop.
+title: Agent Loop Metadata
+description: Minimal schema for loop.yaml files in Agent Loop Hub.
 type: object
 required:
   - name
-  - slug
-  - summary
+  - category
+  - description
   - roles
-  - flow
-  - state
+  - human_checkpoints
+  - state_file
 properties:
   name:
     type: string
@@ -18,6 +18,11 @@ properties:
     type: string
     pattern: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     example: openspec-dev-loop
+  category:
+    type: string
+    example: coding
+  description:
+    type: string
   summary:
     type: string
   tagline:
@@ -26,21 +31,8 @@ properties:
     type: array
     minItems: 1
     items:
-      type: object
-      required:
-        - name
-        - responsibilities
-      properties:
-        name:
-          type: string
-        responsibilities:
-          type: array
-          items:
-            type: string
-        boundaries:
-          type: array
-          items:
-            type: string
+      type: string
+      example: Planner
   flow:
     type: array
     minItems: 1
@@ -63,6 +55,12 @@ properties:
         type: array
         items:
           type: string
+  state_file:
+    type: string
+    example: .agent-loop/state.md
+  status:
+    type: string
+    example: Ready
   heartbeat:
     type: object
     properties:

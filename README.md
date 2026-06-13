@@ -1,5 +1,7 @@
 # Agent Loop Hub
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 Agent Loop Hub is a community collection of reusable AI Agent workflow loops.
 
 Most people share prompts.
@@ -22,6 +24,12 @@ It answers:
 - Where is state stored?
 - How does the workflow continue after failure?
 
+## Loop Gallery
+
+| Category | Loop | Use Case | Status |
+|---|---|---|---|
+| Coding | [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md) | Plan -> Spec -> Code -> Review -> Test -> Archive | Ready |
+
 ## First Loop
 
 ### OpenSpec Dev Loop
@@ -42,25 +50,32 @@ Plan -> Spec -> Implement -> Review -> Human Test -> Fix -> Archive
 
 Start here:
 
-- [OpenSpec Dev Loop](loops/openspec-dev-loop/README.md)
-- [Original Chinese template](loops/openspec-dev-loop/AGENT_LOOP_TEMPLATE.md)
-- [Orchestrator protocol](loops/openspec-dev-loop/ORCHESTRATOR.md)
-- [State template](loops/openspec-dev-loop/state.template.md)
+- [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md)
+- [Loop metadata](loops/coding/openspec-dev-loop/loop.yaml)
+- [Original Chinese template](loops/coding/openspec-dev-loop/AGENT_LOOP_TEMPLATE.md)
+- [Orchestrator protocol](loops/coding/openspec-dev-loop/ORCHESTRATOR.md)
+- [State template](loops/coding/openspec-dev-loop/state.template.md)
 
 ## Repository Structure
 
 ```text
 agent-loop-hub/
   README.md
+  README.zh-CN.md
   loops/
-    openspec-dev-loop/
-      README.md
-      AGENT_LOOP_TEMPLATE.md
-      ORCHESTRATOR.md
-      state.template.md
-      planner.prompt.md
-      executor.prompt.md
-      reviewer.prompt.md
+    coding/
+      openspec-dev-loop/
+        README.md
+        loop.yaml
+        AGENT_LOOP_TEMPLATE.md
+        ORCHESTRATOR.md
+        state.template.md
+        planner.prompt.md
+        executor.prompt.md
+        reviewer.prompt.md
+    writing/
+    research/
+    data/
   schemas/
     loop.schema.yaml
   CONTRIBUTING.md

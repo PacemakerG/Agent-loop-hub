@@ -19,10 +19,11 @@ A loop should explain:
 
 ## Loop Directory Format
 
-Create a directory under `loops/`:
+Create a directory under the matching category:
 
 ```text
-loops/<your-loop-slug>/
+loops/<category>/<your-loop-slug>/
+  loop.yaml
   README.md
   ORCHESTRATOR.md
   state.template.md
@@ -33,12 +34,41 @@ loops/<your-loop-slug>/
 
 Your loop may use different role names. If it does, name the prompt files after your roles.
 
+Recommended categories:
+
+- `coding`
+- `writing`
+- `research`
+- `data`
+
+## Loop Metadata
+
+Each loop should include a `loop.yaml` file:
+
+```yaml
+name: OpenSpec Dev Loop
+category: coding
+description: Planner-Executor-Reviewer loop for OpenSpec-driven software development.
+roles:
+  - Planner
+  - Executor
+  - Reviewer
+human_checkpoints:
+  - plan_review
+  - spec_review
+  - manual_test
+state_file: .agent-loop/state.md
+```
+
+This metadata lets future websites, search pages, and generated galleries index loops automatically.
+
 ## Guidelines
 
 - Keep loops practical and reproducible.
 - Include clear stop conditions for every role.
 - Include human checkpoints.
 - Include state persistence rules.
+- Include `loop.yaml`.
 - Avoid secrets, private thread IDs, private repository names, or personal tokens.
 - Prefer small loops that people can adapt quickly.
 
