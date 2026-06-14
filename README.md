@@ -31,34 +31,12 @@ It answers:
 ## Loop Gallery
 
 | Category | Loop | Use Case | Status |
-|---|---|---|---|---|
+|---|---|---|---|
 | Coding | [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md) | Plan -> Spec -> Code -> Review -> Test -> Archive | Ready |
 | Coding | [Superpowers Dev Loop](loops/coding/superpowers-dev-loop/README.md) | Brainstorm -> Plan -> Subagent TDD -> Review -> Finish | Ready |
 
-## First Loop
-
-### OpenSpec Dev Loop
-
-A Planner-Executor-Reviewer loop for semi-automated software development with human checkpoints.
-
-A software development loop with three roles:
-
-- Planner: writes plans and OpenSpec changes.
-- Executor: implements code based on approved specs.
-- Reviewer: reviews the diff and sends fixes back.
-
-Flow:
-
-```text
-Plan -> Spec -> Implement -> Review -> Human Test -> Fix -> Archive
-```
-
-Start here:
-
-- [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md)
-- [Loop metadata](loops/coding/openspec-dev-loop/loop.yaml)
-- [Orchestrator protocol](loops/coding/openspec-dev-loop/template/ORCHESTRATOR.md)
-- [State template](loops/coding/openspec-dev-loop/template/state.template.md)
+Choose **OpenSpec Dev Loop** for lightweight coding workflows.
+Choose **Superpowers Dev Loop** for stricter, TDD-first, worktree-isolated development.
 
 ## Repository Structure
 

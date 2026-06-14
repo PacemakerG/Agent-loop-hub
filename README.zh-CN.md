@@ -34,30 +34,8 @@ Agent Loop 是一种可以反复复用的 Agent 工作流模式。
 | Coding | [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md) | Plan -> Spec -> Code -> Review -> Test -> Archive | Ready |
 | Coding | [Superpowers Dev Loop](loops/coding/superpowers-dev-loop/README.md) | Brainstorm -> Plan -> Subagent TDD -> Review -> Finish | Ready |
 
-## 第一个 Loop
-
-### OpenSpec Dev Loop
-
-这是一个面向软件开发的 Planner-Executor-Reviewer 工作流。
-
-它适合这种开发方式：
-
-- Planner：把需求拆成计划和 OpenSpec change。
-- Executor：只按已经通过的 spec 写代码和提交。
-- Reviewer：检查实现是否符合 spec，把问题打回去修。
-
-流程：
-
-```text
-Plan -> Spec -> Implement -> Review -> Human Test -> Fix -> Archive
-```
-
-从这里开始看：
-
-- [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md)
-- [Loop metadata](loops/coding/openspec-dev-loop/loop.yaml)
-- [Orchestrator 协议](loops/coding/openspec-dev-loop/template/ORCHESTRATOR.md)
-- [状态模板](loops/coding/openspec-dev-loop/template/state.template.md)
+轻量普通开发选 **OpenSpec Dev Loop**。
+大功能、重构、强 TDD、需要 worktree 隔离的开发选 **Superpowers Dev Loop**。
 
 ## 仓库结构
 
