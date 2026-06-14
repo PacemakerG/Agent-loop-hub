@@ -1,0 +1,21 @@
+name: Superpowers Dev Loop
+slug: superpowers-dev-loop
+category: coding
+description: Skill-stack-driven development loop that enforces brainstorming, micro-task planning, subagent-driven execution with TDD, two-stage code review, and structured branch finishing.
+roles:
+  - Agent
+  - Subagent
+human_checkpoints:
+  - design_approval
+  - plan_approval
+  - branch_finish
+state_file: .agent-loop/state.md
+heartbeat:
+  enabled: true
+  intervals:
+    brainstorming: 3 minutes
+    writing_plans: 3 minutes
+    subagent_driven_development: 10 minutes
+    requesting_code_review: 5 minutes
+    finishing_branch: 5 minutes
+    human_checkpoint: paused

@@ -31,8 +31,9 @@ It answers:
 ## Loop Gallery
 
 | Category | Loop | Use Case | Status |
-|---|---|---|---|
+|---|---|---|---|---|
 | Coding | [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md) | Plan -> Spec -> Code -> Review -> Test -> Archive | Ready |
+| Coding | [Superpowers Dev Loop](loops/coding/superpowers-dev-loop/README.md) | Brainstorm -> Plan -> Subagent TDD -> Review -> Finish | Ready |
 
 ## First Loop
 
@@ -77,6 +78,16 @@ agent-loop-hub/
         planner.prompt.md
         executor.prompt.md
         reviewer.prompt.md
+      superpowers-dev-loop/
+        README.md
+        loop.yaml
+        ORCHESTRATOR.md
+        state.template.md
+        brainstorming.prompt.md
+        writing-plans.prompt.md
+        subagent-driven-development.prompt.md
+        requesting-code-review.prompt.md
+        finishing-a-development-branch.prompt.md
     writing/
     research/
     data/
