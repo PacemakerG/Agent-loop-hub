@@ -39,8 +39,15 @@ Agent Loop 是一种可以反复复用的 Agent 工作流模式。
 | Business | [Lead Scoring Loop](loops/business/lead-scoring-loop/README.md) | Collect -> Enrich -> Score -> Human Review -> CRM Update | Planned |
 | Data | [Data Analysis Loop](loops/data/data-analysis-loop/README.md) | Load -> Clean -> Analyze -> Visualize -> Report | Planned |
 
-轻量普通开发选 **OpenSpec Dev Loop**。
-大功能、重构、强 TDD、需要 worktree 隔离的开发选 **Superpowers Dev Loop**。
+每个 Loop 在 `loop.yaml` 中标注 **来源类型**：
+
+| 类型 | 含义 |
+|---|---|
+| `original` | Agent Loop Hub 原创设计。 |
+| `inspired_by` | 受某项目概念启发，但所有 prompts、模板和结构均为原创。 |
+| `adapted_from` | 基于他人的模板或流程改写。 |
+
+具体来源 URL 和许可证见各 Loop 的 `README.md` 和 `loop.yaml`，或查阅 `ATTRIBUTIONS.md` 汇总表。
 
 ## 仓库结构
 

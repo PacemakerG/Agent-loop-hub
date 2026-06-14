@@ -40,8 +40,15 @@ It answers:
 | Business | [Lead Scoring Loop](loops/business/lead-scoring-loop/README.md) | Collect -> Enrich -> Score -> Human Review -> CRM Update | Planned |
 | Data | [Data Analysis Loop](loops/data/data-analysis-loop/README.md) | Load -> Clean -> Analyze -> Visualize -> Report | Planned |
 
-Choose **OpenSpec Dev Loop** for lightweight coding workflows.
-Choose **Superpowers Dev Loop** for stricter, TDD-first, worktree-isolated development.
+Each loop is tagged with a **source type** in its `loop.yaml`:
+
+| Type | Meaning |
+|---|---|
+| `original` | Designed from scratch by Agent Loop Hub contributors. |
+| `inspired_by` | Conceptually inspired by another project, but all prompts, templates, and structure are original. |
+| `adapted_from` | Based on someone else's template or workflow, restructured into the Agent Loop Hub format. |
+
+All source URLs and licenses are documented per-loop. See each loop's `README.md` and `loop.yaml` for details, or refer to `ATTRIBUTIONS.md` for a full summary.
 
 ## Repository Structure
 
