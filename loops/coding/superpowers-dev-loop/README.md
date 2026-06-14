@@ -2,6 +2,24 @@
 
 A skill-stack-driven development loop inspired by the [Superpowers](https://github.com/obra/superpowers) framework. It enforces a complete software development workflow — brainstorm first, plan in micro-tasks, execute with TDD via subagents, review in two stages, and finish the branch with structured options.
 
+## When to Use This Loop
+
+**Best for:**
+- 大功能开发
+- 重构
+- 核心逻辑改动
+- 需要 TDD 的任务
+- 需要 git worktree 隔离的任务
+- 高纪律、强流程的软件开发
+
+**Not ideal for:**
+- 小 bug
+- 文案修改
+- 简单样式调整
+- 小配置改动
+- 一次性脚本
+- 不需要测试保护的小改动
+
 ## Core Idea
 
 Instead of dispatching separate role agents (Planner, Executor, Reviewer), the Superpowers model puts **one Agent** in control of a **Skill Stack**. The agent checks which skill applies, invokes it, produces artifacts, and advances to the next skill when the current one is complete.
@@ -109,13 +127,15 @@ docs/superpowers/
   plans/     ← implementation plans from writing plans
 ```
 
-## Prompt Files
+## Template Files
 
-- `brainstorming.prompt.md`
-- `writing-plans.prompt.md`
-- `subagent-driven-development.prompt.md`
-- `requesting-code-review.prompt.md`
-- `finishing-a-development-branch.prompt.md`
+- `template/ORCHESTRATOR.md`
+- `template/state.template.md`
+- `template/prompts/brainstorming.prompt.md`
+- `template/prompts/writing-plans.prompt.md`
+- `template/prompts/subagent-driven-development.prompt.md`
+- `template/prompts/requesting-code-review.prompt.md`
+- `template/prompts/finishing-a-development-branch.prompt.md`
 
 ## Heartbeat
 

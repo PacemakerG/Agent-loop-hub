@@ -23,14 +23,18 @@ Create a directory under the matching category:
 
 ```text
 loops/<category>/<your-loop-slug>/
-  loop.yaml
   README.md
-  ORCHESTRATOR.md
-  state.template.md
-  planner.prompt.md
-  executor.prompt.md
-  reviewer.prompt.md
+  loop.yaml
+  template/
+    ORCHESTRATOR.md
+    state.template.md
+    prompts/
+      <role>.prompt.md
+      <role>.prompt.md
+      ...
 ```
+
+The loop root directory keeps only `README.md` and `loop.yaml`. All files meant to be copied into a target project go under `template/`. Prompt files for each role go under `template/prompts/`.
 
 Your loop may use different role names. If it does, name the prompt files after your roles.
 

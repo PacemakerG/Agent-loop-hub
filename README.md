@@ -57,9 +57,8 @@ Start here:
 
 - [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md)
 - [Loop metadata](loops/coding/openspec-dev-loop/loop.yaml)
-- [Original Chinese template](loops/coding/openspec-dev-loop/AGENT_LOOP_TEMPLATE.md)
-- [Orchestrator protocol](loops/coding/openspec-dev-loop/ORCHESTRATOR.md)
-- [State template](loops/coding/openspec-dev-loop/state.template.md)
+- [Orchestrator protocol](loops/coding/openspec-dev-loop/template/ORCHESTRATOR.md)
+- [State template](loops/coding/openspec-dev-loop/template/state.template.md)
 
 ## Repository Structure
 
@@ -72,22 +71,25 @@ agent-loop-hub/
       openspec-dev-loop/
         README.md
         loop.yaml
-        AGENT_LOOP_TEMPLATE.md
-        ORCHESTRATOR.md
-        state.template.md
-        planner.prompt.md
-        executor.prompt.md
-        reviewer.prompt.md
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
+            planner.prompt.md
+            executor.prompt.md
+            reviewer.prompt.md
       superpowers-dev-loop/
         README.md
         loop.yaml
-        ORCHESTRATOR.md
-        state.template.md
-        brainstorming.prompt.md
-        writing-plans.prompt.md
-        subagent-driven-development.prompt.md
-        requesting-code-review.prompt.md
-        finishing-a-development-branch.prompt.md
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
+            brainstorming.prompt.md
+            writing-plans.prompt.md
+            subagent-driven-development.prompt.md
+            requesting-code-review.prompt.md
+            finishing-a-development-branch.prompt.md
     writing/
     research/
     data/

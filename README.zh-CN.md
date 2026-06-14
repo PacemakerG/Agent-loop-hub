@@ -32,6 +32,7 @@ Agent Loop 是一种可以反复复用的 Agent 工作流模式。
 | 分类 | Loop | 适用场景 | 状态 |
 |---|---|---|---|
 | Coding | [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md) | Plan -> Spec -> Code -> Review -> Test -> Archive | Ready |
+| Coding | [Superpowers Dev Loop](loops/coding/superpowers-dev-loop/README.md) | Brainstorm -> Plan -> Subagent TDD -> Review -> Finish | Ready |
 
 ## 第一个 Loop
 
@@ -55,9 +56,8 @@ Plan -> Spec -> Implement -> Review -> Human Test -> Fix -> Archive
 
 - [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md)
 - [Loop metadata](loops/coding/openspec-dev-loop/loop.yaml)
-- [中文原始模板](loops/coding/openspec-dev-loop/AGENT_LOOP_TEMPLATE.md)
-- [Orchestrator 协议](loops/coding/openspec-dev-loop/ORCHESTRATOR.md)
-- [状态模板](loops/coding/openspec-dev-loop/state.template.md)
+- [Orchestrator 协议](loops/coding/openspec-dev-loop/template/ORCHESTRATOR.md)
+- [状态模板](loops/coding/openspec-dev-loop/template/state.template.md)
 
 ## 仓库结构
 
@@ -70,12 +70,25 @@ agent-loop-hub/
       openspec-dev-loop/
         README.md
         loop.yaml
-        AGENT_LOOP_TEMPLATE.md
-        ORCHESTRATOR.md
-        state.template.md
-        planner.prompt.md
-        executor.prompt.md
-        reviewer.prompt.md
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
+            planner.prompt.md
+            executor.prompt.md
+            reviewer.prompt.md
+      superpowers-dev-loop/
+        README.md
+        loop.yaml
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
+            brainstorming.prompt.md
+            writing-plans.prompt.md
+            subagent-driven-development.prompt.md
+            requesting-code-review.prompt.md
+            finishing-a-development-branch.prompt.md
     writing/
     research/
     data/

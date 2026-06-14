@@ -4,6 +4,20 @@ A Planner-Executor-Reviewer loop for semi-automated software development with hu
 
 This loop is designed for software projects that use OpenSpec-style changes and want AI agents to collaborate in a repeatable, resumable way.
 
+## When to Use This Loop
+
+**Best for:**
+- 普通功能开发
+- 小中型需求
+- 需要 plan/spec/implement/review 的轻量流程
+- 不想引入太重 TDD/worktree 纪律的项目
+
+**Not ideal for:**
+- 大规模重构
+- 核心逻辑高风险改动
+- 强制 TDD 的任务
+- 需要严格 git worktree 隔离的开发
+
 ## Core Idea
 
 The human talks to one Orchestrator agent.
@@ -113,11 +127,11 @@ Add this directory to the target project:
 
 Use the templates in this loop:
 
-- `ORCHESTRATOR.md`
-- `state.template.md`
-- `planner.prompt.md`
-- `executor.prompt.md`
-- `reviewer.prompt.md`
+- `template/ORCHESTRATOR.md`
+- `template/state.template.md`
+- `template/prompts/planner.prompt.md`
+- `template/prompts/executor.prompt.md`
+- `template/prompts/reviewer.prompt.md`
 
 ## Heartbeat
 
