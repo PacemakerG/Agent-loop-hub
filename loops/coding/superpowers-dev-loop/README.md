@@ -170,8 +170,5 @@ If finishing step fails (test suite red):
 
 ## Source / Attribution
 
-This loop is **inspired by**:
-
-- **Project**: [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent
-- **License**: MIT
-- **Notes**: This loop adapts the Superpowers skill-stack development workflow (brainstorming → git worktrees → writing plans → subagent-driven development with TDD → code review → finishing a branch) into the Agent Loop Hub format. The original Superpowers project uses SKILL.md files with a SessionStart hook; this loop restructures those concepts into the Agent Loop Hub's role/prompt/state template system.
+- **Type**: original
+- **Notes**: Original Agent Loop Hub design for Superpowers-style skill-stack development. Designed around the Superpowers workflow concept (brainstorming → git worktrees → writing plans → subagent TDD → code review → finishing branch), but all prompts, templates, and loop structure are original to Agent Loop Hub.

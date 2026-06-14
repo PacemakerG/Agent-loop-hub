@@ -1,0 +1,21 @@
+name: Lead Scoring Loop
+slug: lead-scoring-loop
+category: business
+status: Planned
+description: Sales lead collection, profile enrichment, scoring, human review, and CRM updates.
+roles:
+  - Lead Collector
+  - Enricher
+  - Scorer
+  - Reviewer
+  - CRM Updater
+human_checkpoints:
+  - review_high_value_leads
+  - approve_crm_update
+state_file: .agent-loop/state.md
+source:
+  type: inspired_by
+  name: CrewAI Lead Score Flow
+  url: https://github.com/crewAIInc/crewAI-examples
+  license: please verify
+  notes: Inspired by CrewAI Lead Score Flow, especially the human-in-the-loop review pattern. Do not copy implementation or prompts.

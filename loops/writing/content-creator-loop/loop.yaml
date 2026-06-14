@@ -1,0 +1,21 @@
+name: Content Creator Loop
+slug: content-creator-loop
+category: writing
+status: Planned
+description: Blog posts, newsletters, LinkedIn content, technical articles, and other content production.
+roles:
+  - Content Strategist
+  - Researcher
+  - Writer
+  - Editor
+  - Publisher
+human_checkpoints:
+  - approve_outline
+  - approve_final_draft
+state_file: .agent-loop/state.md
+source:
+  type: inspired_by
+  name: CrewAI Content Creator Flow
+  url: https://github.com/crewAIInc/crewAI-examples
+  license: please verify
+  notes: Inspired by CrewAI Content Creator Flow, which covers blogs, LinkedIn posts, and research reports. Do not copy implementation or prompts; only abstract the workflow pattern.

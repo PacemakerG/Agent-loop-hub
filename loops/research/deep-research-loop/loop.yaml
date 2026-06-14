@@ -1,0 +1,23 @@
+name: Deep Research Loop
+slug: deep-research-loop
+category: research
+status: Planned
+description: In-depth research, information gathering, cross-validation, and generating research reports with citations.
+roles:
+  - Research Planner
+  - Searcher
+  - Reader
+  - Synthesizer
+  - Source Reviewer
+human_checkpoints:
+  - approve_research_plan
+  - review_final_report
+state_file: .agent-loop/state.md
+source:
+  type: inspired_by
+  name: LangGraph examples / CrewAI examples
+  url:
+    - https://github.com/langchain-ai/langgraph/tree/main/examples
+    - https://github.com/crewAIInc/crewAI-examples
+  license: please verify
+  notes: Inspired by public research, RAG, plan-and-execute, and report-generation examples. This loop is an original Agent Loop Hub abstraction.

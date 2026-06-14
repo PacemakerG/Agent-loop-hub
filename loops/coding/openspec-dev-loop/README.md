@@ -196,11 +196,5 @@ If human testing fails:
 
 ## Source / Attribution
 
-This loop is **original** to Agent Loop Hub.
-
-It was extracted from a real Codex/OpenSpec development workflow using:
-
-- One Orchestrator thread
-- Planner, Executor, and Reviewer role threads
-- Heartbeat polling
-- Persistent `.agent-loop/state.md`
+- **Type**: original
+- **Notes**: Original Agent Loop Hub design for OpenSpec-style software development.

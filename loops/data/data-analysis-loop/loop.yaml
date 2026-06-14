@@ -1,0 +1,23 @@
+name: Data Analysis Loop
+slug: data-analysis-loop
+category: data
+status: Planned
+description: Data cleaning, exploratory analysis, visualization, insight generation, and report creation.
+roles:
+  - Data Loader
+  - Data Cleaner
+  - Analyst
+  - Visualization Agent
+  - Insight Reviewer
+human_checkpoints:
+  - confirm_analysis_goal
+  - review_final_insights
+state_file: .agent-loop/state.md
+source:
+  type: inspired_by
+  name: CrewAI Stock Analysis / LangGraph RAG and analysis examples
+  url:
+    - https://github.com/crewAIInc/crewAI-examples
+    - https://github.com/langchain-ai/langgraph/tree/main/examples
+  license: please verify
+  notes: Inspired by public agent analysis examples. This loop should be platform-agnostic and not copy framework-specific code.

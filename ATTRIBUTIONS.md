@@ -8,6 +8,7 @@ Agent Loop Hub collects, adapts, and abstracts Agent Workflow / Loop / Examples 
 - Direct rewrites of someone else's workflow, prompts, or document structure must include the original URL, author/project name, and license.
 - Conceptual inspiration only should be marked as `Inspired by`.
 - If the original project's license is unknown, mark it as `license: unknown / please verify`.
+- Agent Loop Hub does not copy third-party code, prompts, or documentation. All loop abstractions are original.
 
 ## Source Type Definitions
 
@@ -22,4 +23,9 @@ Agent Loop Hub collects, adapts, and abstracts Agent Workflow / Loop / Examples 
 | Loop | Source Type | Origin |
 |---|---|---|
 | OpenSpec Dev Loop | original | Agent Loop Hub |
-| Superpowers Dev Loop | inspired_by | [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent (MIT) |
+| Superpowers Dev Loop | original | Agent Loop Hub (designed around Superpowers-style skill-stack workflow) |
+| Deep Research Loop | inspired_by | LangGraph examples / CrewAI examples (please verify license) |
+| Content Creator Loop | inspired_by | CrewAI Content Creator Flow (please verify license) |
+| Meeting Assistant Loop | inspired_by | CrewAI Meeting Assistant Flow (please verify license) |
+| Lead Scoring Loop | inspired_by | CrewAI Lead Score Flow (please verify license) |
+| Data Analysis Loop | inspired_by | CrewAI Stock Analysis / LangGraph RAG examples (please verify license) |

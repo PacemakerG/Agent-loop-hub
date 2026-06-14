@@ -34,6 +34,11 @@ It answers:
 |---|---|---|---|
 | Coding | [OpenSpec Dev Loop](loops/coding/openspec-dev-loop/README.md) | Plan -> Spec -> Code -> Review -> Test -> Archive | Ready |
 | Coding | [Superpowers Dev Loop](loops/coding/superpowers-dev-loop/README.md) | Brainstorm -> Plan -> Subagent TDD -> Review -> Finish | Ready |
+| Research | [Deep Research Loop](loops/research/deep-research-loop/README.md) | Search -> Read -> Synthesize -> Source Check -> Report | Planned |
+| Writing | [Content Creator Loop](loops/writing/content-creator-loop/README.md) | Research -> Outline -> Draft -> Critique -> Revise | Planned |
+| Productivity | [Meeting Assistant Loop](loops/productivity/meeting-assistant-loop/README.md) | Transcript -> Summary -> Action Items -> Follow-up | Planned |
+| Business | [Lead Scoring Loop](loops/business/lead-scoring-loop/README.md) | Collect -> Enrich -> Score -> Human Review -> CRM Update | Planned |
+| Data | [Data Analysis Loop](loops/data/data-analysis-loop/README.md) | Load -> Clean -> Analyze -> Visualize -> Report | Planned |
 
 Choose **OpenSpec Dev Loop** for lightweight coding workflows.
 Choose **Superpowers Dev Loop** for stricter, TDD-first, worktree-isolated development.
@@ -68,11 +73,49 @@ agent-loop-hub/
             subagent-driven-development.prompt.md
             requesting-code-review.prompt.md
             finishing-a-development-branch.prompt.md
-    writing/
     research/
+      deep-research-loop/
+        README.md
+        loop.yaml
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
+    writing/
+      content-creator-loop/
+        README.md
+        loop.yaml
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
+    productivity/
+      meeting-assistant-loop/
+        README.md
+        loop.yaml
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
+    business/
+      lead-scoring-loop/
+        README.md
+        loop.yaml
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
     data/
+      data-analysis-loop/
+        README.md
+        loop.yaml
+        template/
+          ORCHESTRATOR.md
+          state.template.md
+          prompts/
   schemas/
     loop.schema.yaml
+  ATTRIBUTIONS.md
   CONTRIBUTING.md
   LICENSE
 ```

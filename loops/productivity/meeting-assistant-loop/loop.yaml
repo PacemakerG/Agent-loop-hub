@@ -1,0 +1,21 @@
+name: Meeting Assistant Loop
+slug: meeting-assistant-loop
+category: productivity
+status: Planned
+description: Meeting minutes, action item extraction, task sync, and post-meeting follow-up.
+roles:
+  - Transcript Cleaner
+  - Summarizer
+  - Action Item Extractor
+  - Task Dispatcher
+  - Follow-up Writer
+human_checkpoints:
+  - approve_action_items
+  - approve_follow_up_message
+state_file: .agent-loop/state.md
+source:
+  type: inspired_by
+  name: CrewAI Meeting Assistant Flow
+  url: https://github.com/crewAIInc/crewAI-examples
+  license: please verify
+  notes: Inspired by CrewAI Meeting Assistant Flow, which processes meeting notes and integrates with Trello/Slack. This is an original Agent Loop Hub abstraction.
