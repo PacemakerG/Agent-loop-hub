@@ -167,3 +167,11 @@ If review finds critical issues:
 
 If finishing step fails (test suite red):
 - Agent reports failures, offers to fix or abort.
+
+## Source / Attribution
+
+This loop is **inspired by**:
+
+- **Project**: [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent
+- **License**: MIT
+- **Notes**: This loop adapts the Superpowers skill-stack development workflow (brainstorming → git worktrees → writing plans → subagent-driven development with TDD → code review → finishing a branch) into the Agent Loop Hub format. The original Superpowers project uses SKILL.md files with a SessionStart hook; this loop restructures those concepts into the Agent Loop Hub's role/prompt/state template system.

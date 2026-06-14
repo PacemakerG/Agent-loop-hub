@@ -74,4 +74,24 @@ properties:
     type: array
     items:
       type: string
+  source:
+    type: object
+    required:
+      - type
+    properties:
+      type:
+        type: string
+        enum:
+          - original
+          - inspired_by
+          - adapted_from
+      name:
+        type: string
+      url:
+        type: string
+        format: uri
+      license:
+        type: string
+      notes:
+        type: string
 additionalProperties: true

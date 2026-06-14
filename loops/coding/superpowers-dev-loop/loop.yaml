@@ -19,3 +19,9 @@ heartbeat:
     requesting_code_review: 5 minutes
     finishing_branch: 5 minutes
     human_checkpoint: paused
+source:
+  type: inspired_by
+  name: Superpowers
+  url: https://github.com/obra/superpowers
+  license: MIT
+  notes: This loop adapts the Superpowers skill-stack development workflow into the Agent Loop Hub format.

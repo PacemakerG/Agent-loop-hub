@@ -194,9 +194,11 @@ If human testing fails:
 - Executor fixes and commits.
 - Reviewer reviews again before another human test.
 
-## Origin
+## Source / Attribution
 
-This loop was extracted from a real Codex/OpenSpec development workflow using:
+This loop is **original** to Agent Loop Hub.
+
+It was extracted from a real Codex/OpenSpec development workflow using:
 
 - One Orchestrator thread
 - Planner, Executor, and Reviewer role threads

@@ -66,13 +66,27 @@ state_file: .agent-loop/state.md
 
 This metadata lets future websites, search pages, and generated galleries index loops automatically.
 
+## Attribution Requirements
+
+Every loop **must** include a `source` field in `loop.yaml` and a `Source / Attribution` section in `README.md`.
+
+When submitting a loop, answer these questions:
+
+1. Is this loop **original** (designed from scratch)?
+2. Is it **inspired by** another project or workflow?
+3. Is it **adapted from** an existing template or codebase?
+4. If adapted or inspired, what is the original URL, project name, and license?
+5. Which parts were rewritten, abstracted, or directly referenced?
+
+If unsure about the original project's license, write `license: unknown / please verify`.
+
 ## Guidelines
 
 - Keep loops practical and reproducible.
 - Include clear stop conditions for every role.
 - Include human checkpoints.
 - Include state persistence rules.
-- Include `loop.yaml`.
+- Include `loop.yaml` with a valid `source` field.
 - Avoid secrets, private thread IDs, private repository names, or personal tokens.
 - Prefer small loops that people can adapt quickly.
 

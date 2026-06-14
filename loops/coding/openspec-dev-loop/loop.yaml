@@ -10,3 +10,6 @@ human_checkpoints:
   - spec_review
   - manual_test
 state_file: .agent-loop/state.md
+source:
+  type: original
+  notes: Designed and implemented by Agent Loop Hub contributors.
